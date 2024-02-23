@@ -1,0 +1,56 @@
+/* Set background image */
+body {
+    background-image: url('./sounds/Background\ image'); /* Replace 'your-background-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for keys */
+.key {
+    position: relative;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.key:hover {
+    transform: scale(1.1);
+}
+
+.key label {
+    display: block;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Additional styles for key instructions */
+.instructions {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Styling for playing effect when a key is pressed */
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 2px 2px 10px rgba(255, 198, 0, 0.7);
+}
